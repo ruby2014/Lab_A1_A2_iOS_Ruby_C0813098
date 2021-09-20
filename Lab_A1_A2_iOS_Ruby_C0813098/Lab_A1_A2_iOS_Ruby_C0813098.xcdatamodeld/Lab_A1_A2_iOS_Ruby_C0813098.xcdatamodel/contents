@@ -1,4 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDProduct" representedClassName="CDProduct" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="pDescription" optional="YES" attributeType="String"/>
+        <attribute name="price" optional="YES" attributeType="String"/>
+        <attribute name="providerName" optional="YES" attributeType="String"/>
+        <relationship name="toProvider" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDProvider"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="CDProvider" representedClassName="CDProvider" syncable="YES" codeGenerationType="class">
+        <attribute name="providerName" optional="YES" attributeType="String"/>
+        <relationship name="toProduct" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="CDProduct"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="providerName"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="CDProduct" positionX="-54" positionY="-9" width="128" height="119"/>
+        <element name="CDProvider" positionX="-36" positionY="9" width="128" height="59"/>
+    </elements>
 </model>
