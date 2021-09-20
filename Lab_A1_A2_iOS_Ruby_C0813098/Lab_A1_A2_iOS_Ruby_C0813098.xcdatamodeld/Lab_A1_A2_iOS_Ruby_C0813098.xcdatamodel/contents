@@ -1,29 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="CDProduct" representedClassName="CDProduct" syncable="YES" codeGenerationType="class">
-        <attribute name="id" optional="YES" attributeType="String"/>
-        <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="pDescription" optional="YES" attributeType="String"/>
-        <attribute name="price" optional="YES" attributeType="String"/>
-        <attribute name="providerName" optional="YES" attributeType="String"/>
-        <relationship name="toProvider" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDProvider"/>
-        <uniquenessConstraints>
-            <uniquenessConstraint>
-                <constraint value="id"/>
-            </uniquenessConstraint>
-        </uniquenessConstraints>
+    <entity name="Product" representedClassName="Product" syncable="YES" codeGenerationType="class">
+        <attribute name="productDescription" optional="YES" attributeType="String"/>
+        <attribute name="productId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productName" optional="YES" attributeType="String"/>
+        <attribute name="productPrice" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="provider" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Providers" inverseName="products" inverseEntity="Providers"/>
     </entity>
-    <entity name="CDProvider" representedClassName="CDProvider" syncable="YES" codeGenerationType="class">
+    <entity name="Providers" representedClassName="Providers" syncable="YES" codeGenerationType="class">
         <attribute name="providerName" optional="YES" attributeType="String"/>
-        <relationship name="toProduct" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="CDProduct"/>
-        <uniquenessConstraints>
-            <uniquenessConstraint>
-                <constraint value="providerName"/>
-            </uniquenessConstraint>
-        </uniquenessConstraints>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Product" inverseName="provider" inverseEntity="Product"/>
     </entity>
     <elements>
-        <element name="CDProduct" positionX="-54" positionY="-9" width="128" height="119"/>
-        <element name="CDProvider" positionX="-36" positionY="9" width="128" height="59"/>
+        <element name="Product" positionX="-36" positionY="9" width="128" height="104"/>
+        <element name="Providers" positionX="0" positionY="45" width="128" height="59"/>
     </elements>
 </model>

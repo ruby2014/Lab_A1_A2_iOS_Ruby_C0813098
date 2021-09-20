@@ -9,33 +9,29 @@
 /* Begin PBXBuildFile section */
 		0445CBB226F8583F008810DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445CBB126F8583F008810DE /* AppDelegate.swift */; };
 		0445CBB426F8583F008810DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445CBB326F8583F008810DE /* SceneDelegate.swift */; };
-		0445CBB626F8583F008810DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445CBB526F8583F008810DE /* ViewController.swift */; };
 		0445CBB926F8583F008810DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445CBB726F8583F008810DE /* Main.storyboard */; };
 		0445CBBC26F8583F008810DE /* Lab_A1_A2_iOS_Ruby_C0813098.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0445CBBA26F8583F008810DE /* Lab_A1_A2_iOS_Ruby_C0813098.xcdatamodeld */; };
 		0445CBBE26F85840008810DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0445CBBD26F85840008810DE /* Assets.xcassets */; };
 		0445CBC126F85840008810DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445CBBF26F85840008810DE /* LaunchScreen.storyboard */; };
-		0445CBD926F85951008810DE /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445CBD426F85951008810DE /* ProductManager.swift */; };
-		0445CBDA26F85951008810DE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445CBD526F85951008810DE /* ListViewController.swift */; };
-		0445CBDB26F85951008810DE /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445CBD626F85951008810DE /* Product.swift */; };
-		0445CBDC26F85951008810DE /* ProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445CBD726F85951008810DE /* ProviderManager.swift */; };
-		0445CBDD26F85951008810DE /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445CBD826F85951008810DE /* Provider.swift */; };
+		0445CC1E26F861A3008810DE /* ProviderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445CC1A26F861A3008810DE /* ProviderCell.swift */; };
+		0445CC1F26F861A3008810DE /* AddEditProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445CC1B26F861A3008810DE /* AddEditProductVC.swift */; };
+		0445CC2026F861A3008810DE /* ListingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445CC1C26F861A3008810DE /* ListingVC.swift */; };
+		0445CC2126F861A3008810DE /* ProdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445CC1D26F861A3008810DE /* ProdCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0445CBAE26F8583F008810DE /* Lab_A1_A2_iOS_Ruby_C0813098.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab_A1_A2_iOS_Ruby_C0813098.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0445CBB126F8583F008810DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0445CBB326F8583F008810DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0445CBB526F8583F008810DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0445CBB826F8583F008810DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0445CBBB26F8583F008810DE /* Lab_A1_A2_iOS_Ruby_C0813098.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lab_A1_A2_iOS_Ruby_C0813098.xcdatamodel; sourceTree = "<group>"; };
 		0445CBBD26F85840008810DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0445CBC026F85840008810DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0445CBC226F85840008810DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0445CBD426F85951008810DE /* ProductManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
-		0445CBD526F85951008810DE /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		0445CBD626F85951008810DE /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		0445CBD726F85951008810DE /* ProviderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderManager.swift; sourceTree = "<group>"; };
-		0445CBD826F85951008810DE /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		0445CC1A26F861A3008810DE /* ProviderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderCell.swift; sourceTree = "<group>"; };
+		0445CC1B26F861A3008810DE /* AddEditProductVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditProductVC.swift; sourceTree = "<group>"; };
+		0445CC1C26F861A3008810DE /* ListingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingVC.swift; sourceTree = "<group>"; };
+		0445CC1D26F861A3008810DE /* ProdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProdCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,14 +65,12 @@
 			isa = PBXGroup;
 			children = (
 				0445CBB126F8583F008810DE /* AppDelegate.swift */,
+				0445CC1B26F861A3008810DE /* AddEditProductVC.swift */,
+				0445CC1C26F861A3008810DE /* ListingVC.swift */,
+				0445CC1D26F861A3008810DE /* ProdCell.swift */,
+				0445CC1A26F861A3008810DE /* ProviderCell.swift */,
 				0445CBB326F8583F008810DE /* SceneDelegate.swift */,
-				0445CBB526F8583F008810DE /* ViewController.swift */,
 				0445CBB726F8583F008810DE /* Main.storyboard */,
-				0445CBD526F85951008810DE /* ListViewController.swift */,
-				0445CBD626F85951008810DE /* Product.swift */,
-				0445CBD426F85951008810DE /* ProductManager.swift */,
-				0445CBD826F85951008810DE /* Provider.swift */,
-				0445CBD726F85951008810DE /* ProviderManager.swift */,
 				0445CBBD26F85840008810DE /* Assets.xcassets */,
 				0445CBBF26F85840008810DE /* LaunchScreen.storyboard */,
 				0445CBC226F85840008810DE /* Info.plist */,
@@ -155,15 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0445CC2126F861A3008810DE /* ProdCell.swift in Sources */,
+				0445CC1E26F861A3008810DE /* ProviderCell.swift in Sources */,
 				0445CBBC26F8583F008810DE /* Lab_A1_A2_iOS_Ruby_C0813098.xcdatamodeld in Sources */,
-				0445CBD926F85951008810DE /* ProductManager.swift in Sources */,
-				0445CBDA26F85951008810DE /* ListViewController.swift in Sources */,
-				0445CBB626F8583F008810DE /* ViewController.swift in Sources */,
-				0445CBDD26F85951008810DE /* Provider.swift in Sources */,
+				0445CC1F26F861A3008810DE /* AddEditProductVC.swift in Sources */,
+				0445CC2026F861A3008810DE /* ListingVC.swift in Sources */,
 				0445CBB226F8583F008810DE /* AppDelegate.swift in Sources */,
 				0445CBB426F8583F008810DE /* SceneDelegate.swift in Sources */,
-				0445CBDC26F85951008810DE /* ProviderManager.swift in Sources */,
-				0445CBDB26F85951008810DE /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
